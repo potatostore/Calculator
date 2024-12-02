@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <complex>
-#include "TotalCalculator.h"
-#include "DrawingGraph.H"
+#include "DrawingGraph.h"
 
 int main(void) {
-//github test commit
-std::cout << "Hello World!" << std::endl;
+    int n;
+    std::cin >> n;
+    std::cout << n;
+    return 0;
 }

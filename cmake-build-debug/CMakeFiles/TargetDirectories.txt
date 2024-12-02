@@ -1,3 +1,3 @@
-/Users/potatostore/Calculator/cmake-build-debug/CMakeFiles/cppworkspace.cpp.dir
-/Users/potatostore/Calculator/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/potatostore/Calculator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/potatostore/Calculator-cpp/cmake-build-debug/CMakeFiles/Calculator-cpp.dir
+/Users/potatostore/Calculator-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/potatostore/Calculator-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "cppworkspace.cpp"
+			"path" : "Calculator-cpp"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "cppworkspace.cpp::@6890427a1f51a3e7e1df",
+	"id" : "Calculator-cpp::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "cppworkspace.cpp",
-	"nameOnDisk" : "cppworkspace.cpp",
+	"name" : "Calculator-cpp",
+	"nameOnDisk" : "Calculator-cpp",
 	"paths" : 
 	{
 		"build" : ".",

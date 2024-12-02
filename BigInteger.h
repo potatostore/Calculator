@@ -39,10 +39,17 @@ public:
     bool operator!=(const BigInteger &input) const;
 
     BigInteger operator+(const BigInteger &input) const;
+    BigInteger operator+=(const BigInteger &input) const;
+    BigInteger operator++(const BigInteger &input) const;
     BigInteger operator-(const BigInteger &input) const;
+    BigInteger operator-=(const BigInteger &input) const;
+    BigInteger operator--(const BigInteger &input) const;
     BigInteger operator*(const BigInteger &input) const;
+    BigInteger operator*=(const BigInteger &input) const;
     BigInteger operator/(const BigInteger &input) const;
+    BigInteger operator/=(const BigInteger &input) const;
     BigInteger operator%(const BigInteger &input) const;
+    BigInteger operator%=(const BigInteger &input) const;
 };
 
 bool BigInteger::operator==(const BigInteger &input) const{
@@ -107,6 +114,14 @@ BigInteger BigInteger::operator+(const BigInteger &input) const{
     return result;
 }
 
+BigInteger BigInteger::operator+=(const BigInteger &input) const {
+    return *this + input;
+}
+
+BigInteger BigInteger::operator++(const BigInteger &input = "1") const {
+    return *this + input;
+}
+
 BigInteger BigInteger::operator-(const BigInteger &input) const{
     std::string result = "";
     int carry = 0;
@@ -124,23 +139,58 @@ BigInteger BigInteger::operator-(const BigInteger &input) const{
         }
 
         result.push_back(sum + carry);
-
     }
 
     return result;
 }
 
+BigInteger BigInteger::operator-=(const BigInteger &input) const {
+    return *this - input;
+}
+
+BigInteger BigInteger::operator--(const BigInteger &input = "1") const {
+    return *this - input;
+}
+
 BigInteger BigInteger::operator*(const BigInteger &input) const{
     std::string result = "";
 
+    for(int i=0;i<this->digits.size();++i) {
+        for(int j=0;j<input.digits.size();++j) {
+            result += this->digits[i] + input.digits[j];
+        }
+    }
+
+    return result;
 }
 
-BigInteger operator/(const BigInteger &input) {
+BigInteger BigInteger::operator*=(const BigInteger &input) const {
+    return *this * input;
+}
+
+BigInteger BigInteger::operator/(const BigInteger &input) const{
+    BigInteger result("");
+
+    while(*this > input) {
+        *this -= input;
+        result +=
+    }
+
 
 }
 
-BigInteger operator%(const BigInteger &input) {
+BigInteger BigInteger::operator/=(const BigInteger &input) const {
+    return *this / input;
+}
 
+BigInteger BigInteger::operator%(const BigInteger &input) const{
+    std::string result = "";
+
+    BigInteger quotient("");
+}
+
+BigInteger BigInteger::operator%=(const BigInteger &input) const {
+    return *this % input;
 }
 
 #endif //BIGINTEGER_H

@@ -10,7 +10,7 @@ public:
 
     static auto integral(Fucntion f, double a, double b, int n = 10000) -> double {
         double h = b - a / n;
-        double term =
+        double term = 10000;
         double result = 0;
 
         for(int i=0;i<n;++i) {

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/potatostore/Calculator/cmake-build-debug"
+			"value" : "/Users/potatostore/Calculator-cpp/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "29"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/potatostore/Calculator/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/potatostore/Calculator-cpp/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/potatostore/Calculator"
+			"value" : "/Users/potatostore/Calculator-cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Calculator"
+			"value" : "Calculator-cpp"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -863,7 +863,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29"
+			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1118,7 +1118,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Calculator_BINARY_DIR",
+			"name" : "Calculator-cpp_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1127,10 +1127,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/potatostore/Calculator/cmake-build-debug"
+			"value" : "/Users/potatostore/Calculator-cpp/cmake-build-debug"
 		},
 		{
-			"name" : "Calculator_IS_TOP_LEVEL",
+			"name" : "Calculator-cpp_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1142,7 +1142,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Calculator_SOURCE_DIR",
+			"name" : "Calculator-cpp_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1151,43 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/potatostore/Calculator"
-		},
-		{
-			"name" : "cppworkspace_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/potatostore/Calculator/cmake-build-debug"
-		},
-		{
-			"name" : "cppworkspace_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "cppworkspace_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/potatostore/Calculator"
+			"value" : "/Users/potatostore/Calculator-cpp"
 		}
 	],
 	"kind" : "cache",
