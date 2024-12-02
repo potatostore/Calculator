@@ -4,8 +4,5 @@
 #include "DrawingGraph.h"
 
 int main(void) {
-    int n;
-    std::cin >> n;
-    std::cout << n;
-    return 0;
+    //test push data - second
 }
