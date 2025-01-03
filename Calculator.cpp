@@ -4,5 +4,7 @@
 #include "DrawingGraph.h"
 
 int main(void) {
-    //test push data - second
+
+    return 0;
+
 }

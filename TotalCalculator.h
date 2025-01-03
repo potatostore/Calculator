@@ -4,6 +4,7 @@
 #include "LogCalculator.h"
 #include "ComplexCalculator.h"
 #include "CalculusCalculator.h"
+#include "SimpleCalculator.h"
 
 class TotalCalculator{
 public:

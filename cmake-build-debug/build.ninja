@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Calculator-cpp: phony || .
 
 build CMakeFiles/Calculator-cpp.dir/Calculator.cpp.o: CXX_COMPILER__Calculator-cpp_unscanned_Debug /Users/potatostore/Calculator-cpp/Calculator.cpp || cmake_object_order_depends_target_Calculator-cpp
   DEP_FILE = CMakeFiles/Calculator-cpp.dir/Calculator.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Calculator-cpp.dir
   OBJECT_FILE_DIR = CMakeFiles/Calculator-cpp.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/Calculator-cpp.dir/Calculator.cpp.o: CXX_COMPILER__Calculator-c
 # Link the executable Calculator-cpp
 
 build Calculator-cpp: CXX_EXECUTABLE_LINKER__Calculator-cpp_Debug CMakeFiles/Calculator-cpp.dir/Calculator.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
   OBJECT_DIR = CMakeFiles/Calculator-cpp.dir
   POST_BUILD = :
   PRE_LINK = :
