@@ -1,6 +1,5 @@
-#ifndef TESTHEADER_H
-#define TESTHEADER_H
-
+#ifndef BIGINTEGER_H
+#define BIGINTEGER_H
 
 class BigInteger {
 private:
@@ -30,7 +29,7 @@ public:
         }
     }
 
-    std::ostream& operator<<(std::ostream& os) const;
+    std::ostream operator<<() const;
 
     bool operator==(const BigInteger &input) const;
     bool operator<(const BigInteger &input) const;
@@ -55,21 +54,18 @@ public:
     BigInteger divideByTwoForDivision(const BigInteger &input) const;
 };
 
-std::ostream& BigInteger::operator<<(std::ostream& os) const{
+std::ostream BigInteger::operator<<() const{
     std::string result = "";
-    if(this->isNegative) {
-        result += "-";
+
+    if ((!isNegative && !isNegative) || (isNegative && isNegative)) {
+        result = "-";
     }
 
-    for(auto i = digits.end();i>=digits.begin();i--) {
-        result += *i + '0';
+    for (int i=digits.size()-1;i>=0;i--) {
+        result += digits[i];
     }
 
-    for(auto i : result) {
-        std:: cout << i;
-    }
-
-    return os;
+    return result;
 }
 
 bool BigInteger::operator==(const BigInteger &input) const{
@@ -228,16 +224,11 @@ BigInteger BigInteger::operator-(const BigInteger &input) const {
         }
 
         // 결과 BigInteger 생성
-        std::string result = "";
-        if(resultNegative) {
-            result += "-";
-        }
+        BigInteger result;
+        result.digits = resultDigits;
+        result.isNegative = resultNegative;
 
-        for(auto i = resultDigits.end();i>=resultDigits.begin();i--) {
-            result += *i + '0';
-        }
-
-        return BigInteger(result);
+        return result;
     } else {
         // 부호가 다르면 덧셈으로 처리 (A - (-B) == A + B)
         BigInteger temp = input;
@@ -349,4 +340,4 @@ BigInteger BigInteger::divideByTwoForDivision(const BigInteger &input) const {
     return BigInteger(result);
 }
 
-#endif //TESTHEADER_H
+#endif //BIGINTEGER_H
