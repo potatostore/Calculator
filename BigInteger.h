@@ -1,5 +1,6 @@
-#ifndef BIGINTEGER_H
-#define BIGINTEGER_H
+#ifndef TESTHEADER_H
+#define TESTHEADER_H
+
 
 class BigInteger {
 private:
@@ -29,7 +30,7 @@ public:
         }
     }
 
-    std::ostream operator<<() const;
+    std::ostream& operator<<(std::ostream& os) const;
 
     bool operator==(const BigInteger &input) const;
     bool operator<(const BigInteger &input) const;
@@ -54,18 +55,21 @@ public:
     BigInteger divideByTwoForDivision(const BigInteger &input) const;
 };
 
-std::ostream BigInteger::operator<<() const{
+std::ostream& BigInteger::operator<<(std::ostream& os) const{
     std::string result = "";
-
-    if ((!isNegative && !isNegative) || (isNegative && isNegative)) {
-        result = "-";
+    if(this->isNegative) {
+        result += "-";
     }
 
-    for (int i=digits.size()-1;i>=0;i--) {
-        result += digits[i];
+    for(auto i = digits.end();i>=digits.begin();i--) {
+        result += *i + '0';
     }
 
-    return result;
+    for(auto i : result) {
+        std:: cout << i;
+    }
+
+    return os;
 }
 
 bool BigInteger::operator==(const BigInteger &input) const{
@@ -224,9 +228,14 @@ BigInteger BigInteger::operator-(const BigInteger &input) const {
         }
 
         // 결과 BigInteger 생성
-        BigInteger result;
-        result.digits = resultDigits;
-        result.isNegative = resultNegative;
+        std::string result = "";
+        if(resultNegative) {
+            result += "-";
+        }
+
+        for(auto i = resultDigits.end();i>=resultDigits.begin();i--) {
+            result += *i + '0';
+        }
 
         return result;
     } else {
@@ -340,4 +349,4 @@ BigInteger BigInteger::divideByTwoForDivision(const BigInteger &input) const {
     return BigInteger(result);
 }
 
-#endif //BIGINTEGER_H
+#endif //TESTHEADER_H
